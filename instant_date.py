@@ -1,11 +1,12 @@
+import datetime
 from datetime import date
 from VALID import OKI, ER, ns
 import time
 import subprocess
 
 def año_valido(a):
-    if a<0 or a>9999:
-        a=año_valido(OKI(input("El año no puede ser menor de 0 ni mayor de 9999: ")))
+    if a<1 or a>9999:
+        a=año_valido(OKI(input("El año no puede ser menor de 1 ni mayor de 9999: ")))
     return a
     
 
